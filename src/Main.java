@@ -4,7 +4,9 @@ import br.com.dio.desafio.dominio.Dev;
 import br.com.dio.desafio.dominio.Mentoria;
 
 import java.time.LocalDate;
-
+/**
+ *
+ */
 public class Main {
     public static void main(String[] args) {
         Curso curso1 = new Curso();
@@ -58,6 +60,24 @@ public class Main {
         System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
         System.out.println("XP:" + devJoao.calcularTotalXp());
 
+        Dev devRoberson = new Dev();
+        devRoberson.setNome("Roberson");
+        devRoberson.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Roberson:" + devRoberson.getConteudosInscritos());
+        devRoberson.progredir();
+        devRoberson.progredir();
+        devRoberson.progredir();
+        System.out.println("-");
+        System.out.println("Conteúdos Inscritos Roberson:" + devRoberson.getConteudosInscritos());
+        System.out.println("Conteúdos Concluidos Roberson:" + devRoberson.getConteudosConcluidos());
+        System.out.println("XP:" + devRoberson.calcularTotalXp());
+
+        System.out.println("-");
+        System.out.println("Total XP : " +(devCamila.calcularTotalXp() + devRoberson.calcularTotalXp())+ devJoao.calcularTotalXp());
+
+
+        
+        
     }
 
 }

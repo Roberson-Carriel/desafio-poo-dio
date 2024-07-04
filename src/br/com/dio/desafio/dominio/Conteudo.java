@@ -8,6 +8,8 @@ public abstract class Conteudo {
     private String descricao;
 
     public abstract double calcularXp();
+    public abstract double setDevsInscritos();
+    public abstract double calcularInscritos();
 
     public String getTitulo() {
         return titulo;

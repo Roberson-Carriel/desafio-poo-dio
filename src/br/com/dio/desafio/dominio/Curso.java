@@ -29,4 +29,16 @@ public class Curso extends Conteudo{
                 ", cargaHoraria=" + cargaHoraria +
                 '}';
     }
+
+    @Override
+    public double setDevsInscritos() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setDevsInscritos'");
+    }
+
+    @Override
+    public double calcularInscritos() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'calcularInscritos'");
+    }
 }

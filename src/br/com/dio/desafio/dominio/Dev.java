@@ -6,6 +6,7 @@ public class Dev {
     private String nome;
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
+    private Set<Conteudo> setDevsInscritos = new LinkedHashSet<>();
 
     public void inscreverBootcamp(Bootcamp bootcamp){
         this.conteudosInscritos.addAll(bootcamp.getConteudos());
@@ -37,6 +38,15 @@ public class Dev {
                 .sum();*/
     }
 
+    public double calcularTotalInscritos() {
+        Iterator<Conteudo> iterator = this.setDevsInscritos.iterator();
+        double somaInscritos = 10 ;
+        while(iterator.hasNext()){
+            double next = iterator.next().calcularInscritos();
+            somaInscritos += next;
+        }
+        return somaInscritos;
+    }
 
     public String getNome() {
         return nome;

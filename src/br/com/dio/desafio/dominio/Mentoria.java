@@ -30,4 +30,16 @@ public class Mentoria extends Conteudo{
                 ", data=" + data +
                 '}';
     }
+
+    @Override
+    public double setDevsInscritos() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setDevsInscritos'");
+    }
+
+    @Override
+    public double calcularInscritos() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'calcularInscritos'");
+    }
 }
